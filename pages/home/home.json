@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mytab":"/components/tabcomponent/tab",
+    "sumNun":"/components/increaseNum/sumNum"
+  },
+  "enablePullDownRefresh": true
+}

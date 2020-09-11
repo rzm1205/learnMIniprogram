@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+<text>pages/home/home.wxml</text>
+<view>{{name}}</view>
+<button size="mini" bind:tap="handclick">获取授权</button>
+<view>==========练习组件===========</view>
+<!-- 子传父 -->
+<mytab bind:querydataFormchild="querydataFormchild" tabArr="{{['裤子','鞋子','上衣']}}"></mytab>
+<!-- 父传子 -->
+<sumNun id="sumNun" bind:tap="sum" title="我是父级向子级传递的参数" num="100"></sumNun>
+<!-- 全局组件 -->
+<!-- 全局组件是在app.json 中调用 -->
+<!-- 插槽 slot ，多个插槽，注意事项1.可以起名字给插槽，及在组件中component。options，mutipleSlots为true-->
+
+<view>========练习界面提示信息========</view> 
+<button size="mini" bind:tap="showToast">轻提示</button>
+<button size="mini" bind:tap="showModal">模态框</button>
+<button size="mini" bind:tap="showLoading">显示 loading 提示框</button>
+<button size="mini" bind:tap="showActionSheet">显示操作菜单</button>
+<button size="mini" open-type="share">分享小程序</button>
+<view>========小程序的登录========</view> 
+wx.login登录接口获取code，传到后台,获取token令牌，存储到本地，Storage,每次load时候，判断token是否存在，存在则登录，不存在则再走接口登录
+
+<view>========小程序页面跳转========</view> 
+1.navigator组件跳转，也可传参直接url上拼接?key = value
+open-type属性可设定到底是怎么跳转，如switchTab等，跳转到带有tab的页面
+<navigator url="/pages/profile/profile" open-type="switchTab">跳转到我的页</navigator>
+2.方程式跳转
+<button size="mini" bind:tap="switchTabToProfile">跳转到我的页</button>
+

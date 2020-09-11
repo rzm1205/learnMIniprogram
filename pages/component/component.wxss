@@ -1,0 +1,47 @@
+/* pages/component/component.wxss */
+@import "style/map.wxss";
+
+.oniview{
+  font-size: 14px;
+  color: red;
+  background: yellow;
+}
+.tapview{
+  color: aqua;
+  background: yellow;
+  font-size: 30px;
+}
+.inputview{
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 4px 10px;
+}
+.scrollview{
+  height: 300px;
+  background: blanchedalmond;
+}
+.scrollview2{
+  background:aqua;
+  white-space: nowrap;
+  margin: 20px 0;
+}
+.scrollview2 .view{
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background: blue;
+  color: #ffffff;
+  margin-right: 10px;
+}
+.demo-text-1{
+  background: red;
+  height: 300rpx;
+}
+.demo-text-2{
+  background: yellow;
+  height: 300rpx;
+}
+.demo-text-3{
+  background: grey;
+  height: 300rpx;
+}

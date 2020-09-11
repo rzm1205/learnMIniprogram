@@ -1,0 +1,18 @@
+/* components/tabcompoent/tab.wxss */
+.tabview{
+  height: 200rpx;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabview .tab {
+  flex:1;
+  text-align: center;
+}
+.item{
+  padding: 20rpx 0;
+}
+.active{
+  color: red;
+  border-bottom: 2px solid red;
+}

@@ -1,0 +1,6 @@
+<!--components/increaseNum/sumNum.wxml-->
+<view>
+  <view><button size="mini">父级传值给子级传值求和</button></view>  
+  <view>当前数值:{{num}}</view>
+  <text>{{title}}</text>
+</view>

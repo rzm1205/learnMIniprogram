@@ -1,0 +1,14 @@
+<!--components/tabcompoent/tab.wxml-->
+<view class="tabview">
+  <block  wx:for="{{tabArr}}" wx:key="index">
+    <view class="tab">
+      <text  class="item {{curIndex==index?'active':''}}" 
+        bindtap="handleTapItem"
+        data-index = "{{index}}"
+        data-item = "{{item}}"
+        >
+        {{item}}
+        </text>
+    </view>
+  </block>
+</view>
